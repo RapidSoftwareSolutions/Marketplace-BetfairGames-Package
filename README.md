@@ -6,6 +6,20 @@ Integrate with the Betfair Exchange Games system - from creating a new client fr
 ## How to get credentials: 
 Just [create Betfair Account](https://register.betfair.com/account/registration) and use your `username` and `password`.
 
+## `apiAgent` field
+Each request to Betfair Games API for protected information must include the following field entry in its message header:
+
+#### `gamexAPIAgent``:` `application_ID_and_version_number`
+
+where `application_ID_and_version_number` is a URI (a Universal Resource Identifier) that identifies you as the creator of the application either by personal name (if you are a private individual) or by the name of your organization (if you have created the client application on behalf of an organization), and that includes at the end the version number of the software. 
+
+Some sample agent IDs are:
+```
+ABCBets.com.GamesApp.1.0
+ABCPartner1.com.GamesApp.1.1
+123Games.co.uk.GamePal.2.1
+maryBrown@AOL.com.myGames.4.0 
+```
 
 ## BetfairGames.getChannels
 Listing all the games you can bet on.
