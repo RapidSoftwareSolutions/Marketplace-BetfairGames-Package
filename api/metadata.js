@@ -222,22 +222,6 @@ module.exports.do = (req, res) => { res.status(200).send(
             "info": "Required: gamexAPIAgent - see README for more info."
         }]
     }, {
-        "name": "getBetLanding",
-        "description": "Managing Bets",
-        "args": [{
-            "name": "username",
-            "type": "credentials",
-            "info": "Required: Account username."
-        }, {
-            "name": "password",
-            "type": "credentials",
-            "info": "Required: Account password."
-        }, {
-            "name": "apiAgent",
-            "type": "String",
-            "info": "Required: gamexAPIAgent - see README for more info."
-        }]
-    }, {
         "name": "getBetSnapshot",
         "description": "Viewing your current and past betting activity",
         "args": [{

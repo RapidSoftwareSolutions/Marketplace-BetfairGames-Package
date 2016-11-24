@@ -33,7 +33,7 @@ Describing the current game in a channel.
 
 
 ## BetfairGames.getChannelHistory
-Requesting JSON Listing the previous games in a channel
+Requesting JSON Listing the previous games in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -46,7 +46,7 @@ Requesting JSON Listing the previous games in a channel
 | marketId   | Number     | To each of the URLs for requesting the “channelHistory” element, you can add a parameter manually to limit the output to information about a single past game.
 
 ## BetfairGames.getChannelInfo
-Requesting JSON stating when betting is permitted in a game
+Requesting JSON stating when betting is permitted in a game.
 
 | Field   | Type       | Description
 |---------|------------|----------
@@ -56,7 +56,7 @@ Requesting JSON stating when betting is permitted in a game
 
 
 ## BetfairGames.getExchangeGamesAccountBalances
-Requesting JSON listing Your exchange games account balances
+Requesting JSON listing Your exchange games account balances.
 
 | Field   | Type       | Description
 |---------|------------|----------
@@ -66,7 +66,7 @@ Requesting JSON listing Your exchange games account balances
 
 
 ## BetfairGames.getBetfairAccountBalance
-Requesting JSON stating Your main Betfair alance
+Requesting JSON stating Your main Betfair alance.
 
 | Field   | Type       | Description
 |---------|------------|----------
@@ -76,7 +76,7 @@ Requesting JSON stating Your main Betfair alance
 
 
 ## BetfairGames.getAccountStatement
-Requesting JSON that lists uour games account transactions
+Requesting JSON that lists uour games account transactions.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -89,7 +89,7 @@ Requesting JSON that lists uour games account transactions
 
 
 ## BetfairGames.createTransferOrder
-Requesting JSON that lists uour games account transactions
+Requesting JSON that lists uour games account transactions.
 
 | Field   | Type       | Description
 |---------|------------|----------
@@ -99,19 +99,8 @@ Requesting JSON that lists uour games account transactions
 | currency| String     | Required: 3-letter currency code.
 | amount  | String     | Required: If you specify a non-negative value for the amount (as in the example above, which specifies £50), then that amount of money will be transferred from your main Betfair account into your Betfair Exchange Games account.
 
-
 ## BetfairGames.getBetLanding
-Managing Bets
-
-| Field   | Type       | Description
-|---------|------------|----------
-| username| credentials| Required: Account username.
-| password| credentials| Required: Account password.
-| apiAgent| String     | Required: gamexAPIAgent - see README for more info.
-
-
-## BetfairGames.getBetLanding
-Managing Bets
+Managing Bets.
 
 | Field   | Type       | Description
 |---------|------------|----------
@@ -121,7 +110,7 @@ Managing Bets
 
 
 ## BetfairGames.getBetSnapshot
-Viewing your current and past betting activity
+Viewing your current and past betting activity.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -135,7 +124,7 @@ Viewing your current and past betting activity
 
 
 ## BetfairGames.getBetHistory
-Viewing your current and past betting activity
+Viewing your current and past betting activity.
 
 | Field          | Type       | Description
 |----------------|------------|----------
@@ -148,7 +137,7 @@ Viewing your current and past betting activity
 | recordCount    | Number     | Specify the number of bets that you want the list returned to contain.
 | startRecord    | Number     | Specify the start position (that is, the start position in the Exchange Games API’s overall list) for the list of bets that you want to receive.
 | orderBy        | String     | Valid values: `channelName`, `placedDate`. Order the returned list of bets by the type of game you are interested in.
-| timezone       | String     | Specifying a time zone for the reporting of Your bets. Time zone code. See README for more info. channelName.
+| timezone       | String     | Specifying a time zone for the reporting of Your bets. Time zone code. See README for more info.
 
 ## BetfaitGames `timezone` codes: 
 
