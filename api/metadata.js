@@ -41,7 +41,7 @@ module.exports.do = (req, res) => { res.status(200).send(
             "info": "Required: Account password."
         }, {
             "name": "channelId",
-            "type": "credentials",
+            "type": "String",
             "info": "Required: Channel ID to snapshot."
         }, {
             "name": "apiAgent",
@@ -77,7 +77,7 @@ module.exports.do = (req, res) => { res.status(200).send(
             "info": "Required: Account password."
         }, {
             "name": "channelId",
-            "type": "credentials",
+            "type": "String",
             "info": "Required: Channel ID to retrive history for."
         }, {
             "name": "apiAgent",
@@ -114,44 +114,12 @@ module.exports.do = (req, res) => { res.status(200).send(
             "info": "Required: gamexAPIAgent - see README for more info."
         }, {
             "name": "channelId",
-            "type": "credentials",
+            "type": "String",
             "info": "Required: Channel ID to retrive."
         }, {
             "name": "startRecord",  
             "type": "Number",
             "info": "Specify the start position (that is, the start position in the Games API’s overall list) for the list of games that you want to receive. "
-        }]
-    }, {
-        "name": "getChannelInfo",
-        "description": "Requesting JSON stating when betting is permitted in a game",
-        "args": [{
-            "name": "username",
-            "type": "credentials",
-            "info": "Required: Account username."
-        }, {
-            "name": "password",
-            "type": "credentials",
-            "info": "Required: Account password."
-        }, {
-            "name": "apiAgent",
-            "type": "String",
-            "info": "Required: gamexAPIAgent - see README for more info."
-        }]
-    }, {
-        "name": "getExchangeGamesAccountBalances",
-        "description": "Requesting JSON listing Your exchange games account balances",
-        "args": [{
-            "name": "username",
-            "type": "credentials",
-            "info": "Required: Account username."
-        }, {
-            "name": "password",
-            "type": "credentials",
-            "info": "Required: Account password."
-        }, {
-            "name": "apiAgent",
-            "type": "String",
-            "info": "Required: gamexAPIAgent - see README for more info."
         }]
     }, {
         "name": "getExchangeGamesAccountBalances",
@@ -323,11 +291,11 @@ module.exports.do = (req, res) => { res.status(200).send(
         }, {
             "name": "placedDateStart",
             "type": "String",
-            "info": "Specify a start date for the list of bets to be returned. Foramt: `yyyy-MM-dd-HH:mm`"
+            "info": "Specify a start date for the list of bets to be returned. Format: `yyyy-MM-dd-HH:mm`"
         }, {
             "name": "placedDateEnd",
             "type": "String",
-            "info": "Specify an end date for the list of bets to be returned. Foramt: `yyyy-MM-dd-HH:mm`"
+            "info": "Specify an end date for the list of bets to be returned. Format: `yyyy-MM-dd-HH:mm`"
         }, {
             "name": "recordCount",
             "type": "Number",
@@ -340,10 +308,6 @@ module.exports.do = (req, res) => { res.status(200).send(
             "name": "orderBy",
             "type": "String",
             "info": "Valid values: `channelName`, `placedDate`. Order the returned list of bets by the type of game you are interested in."
-        }, {
-            "name": "orderBy",
-            "type": "String",
-            "info": "channelName. Order the returned list of bets by the type of game you are interested in."
         }, {
             "name": "timezone",
             "type": "String",

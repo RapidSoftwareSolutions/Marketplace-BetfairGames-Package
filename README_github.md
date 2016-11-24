@@ -6,7 +6,23 @@ Integrate with the Betfair Exchange Games system - from creating a new client fr
 ## How to get credentials: 
 Just [create Betfair Account](#https://register.betfair.com/account/registration?promotionCode=FWB000&returnURL=https%3A//www.betfair.com/sport/) and use your `username` and `password`.
 
-
+## TOC: 
+* [getChannels](#getChannels)
+* [getChannelSnapshot](#getChannelSnapshot)
+* [getChannelHistory](#getChannelHistory)
+* [getChannelInfo](#getChannelInfo)
+* [getChannelInfo](#getChannelInfo)
+* [getExchangeGamesAccountBalances](#getExchangeGamesAccountBalances)
+* [getExchangeGamesAccountBalances](#getExchangeGamesAccountBalances)
+* [getBetfairAccountBalance](#getBetfairAccountBalance)
+* [getAccountStatement](#getAccountStatement)
+* [createTransferOrder](#createTransferOrder)
+* [getBetLanding](#getBetLanding)
+* [getBetLanding](#getBetLanding)
+* [getBetSnapshot](#getBetSnapshot)
+* [getBetHistory](#getBetHistory)
+ 
+<a name="getChannels"/>
 ## BetfairGames.getChannels
 Listing all the games you can bet on.
 
@@ -16,7 +32,7 @@ Listing all the games you can bet on.
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
-
+<a name="getChannelSnapshot"/>
 ## BetfairGames.getChannelSnapshot
 Describing the current game in a channel.
 
@@ -31,7 +47,7 @@ Describing the current game in a channel.
 | includeTiming  | String     | To each of the URLs for requesting the “channelSnapshot” element, you can add a parameter manually to suppress the elements in a “channelSnapshot” that give details of the current betting round. These elements are “round”, “bettingWindowTime”, and “bettingWindowPercentageComplete”. Use this parameter if you do not need to receive details of the current betting round. Set `false` for suppressing these elements. Deafult is `true`.
 | selectionsType | String     | The parameter for specifying the betting market you want to see. Example: `MainBets`
 
-
+<a name="getChannelHistory"/>
 ## BetfairGames.getChannelHistory
 Requesting JSON Listing the previous games in a channel
 
@@ -45,6 +61,19 @@ Requesting JSON Listing the previous games in a channel
 | recordCount| Number     | Specify the number of games that you want the list returned to contain.
 | marketId   | Number     | To each of the URLs for requesting the “channelHistory” element, you can add a parameter manually to limit the output to information about a single past game.
 
+<a name="getChannelInfo"/>
+## BetfairGames.getChannelInfo
+Requesting JSON stating when betting is permitted in a game 
+
+| Field      | Type       | Description
+|------------|------------|----------
+| username   | credentials| Required: Account username.
+| password   | credentials| Required: Account password.
+| apiAgent   | String     | Required: gamexAPIAgent - see README for more info.
+| channelId  | credentials| Required: Channel ID to retrive.
+| startRecord| Number     | Specify the start position (that is, the start position in the Games API’s overall list) for the list of games that you want to receive. 
+
+<a name="getChannelInfo"/>
 ## BetfairGames.getChannelInfo
 Requesting JSON stating when betting is permitted in a game
 
@@ -54,7 +83,7 @@ Requesting JSON stating when betting is permitted in a game
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
-
+<a name="getExchangeGamesAccountBalances"/>
 ## BetfairGames.getExchangeGamesAccountBalances
 Requesting JSON listing Your exchange games account balances
 
@@ -64,7 +93,17 @@ Requesting JSON listing Your exchange games account balances
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
+<a name="getExchangeGamesAccountBalances"/>
+## BetfairGames.getExchangeGamesAccountBalances
+Requesting JSON listing Your exchange games account balances
 
+| Field   | Type       | Description
+|---------|------------|----------
+| username| credentials| Required: Account username.
+| password| credentials| Required: Account password.
+| apiAgent| String     | Required: gamexAPIAgent - see README for more info.
+
+<a name="getBetfairAccountBalance"/>
 ## BetfairGames.getBetfairAccountBalance
 Requesting JSON stating Your main Betfair alance
 
@@ -74,7 +113,7 @@ Requesting JSON stating Your main Betfair alance
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
-
+<a name="getAccountStatement"/>
 ## BetfairGames.getAccountStatement
 Requesting JSON that lists uour games account transactions
 
@@ -87,7 +126,7 @@ Requesting JSON that lists uour games account transactions
 | recordCount| Number     | To each of the URLs for requesting the “accountStatement” element, you can add a parameter manually to specify the number of transactions that you want the list returned to contain. 
 | startRecord| Number     | To each of the URLs for requesting the “accountStatement” element, you can add a parameter manually to specify the start position (that is, the start position in the Exchange Games API’s overall list) for the list of transactions that you want to receive. 
 
-
+<a name="createTransferOrder"/>
 ## BetfairGames.createTransferOrder
 Requesting JSON that lists uour games account transactions
 
@@ -99,7 +138,7 @@ Requesting JSON that lists uour games account transactions
 | currency| String     | Required: 3-letter currency code.
 | amount  | String     | Required: If you specify a non-negative value for the amount (as in the example above, which specifies £50), then that amount of money will be transferred from your main Betfair account into your Betfair Exchange Games account.
 
-
+<a name="getBetLanding"/>
 ## BetfairGames.getBetLanding
 Managing Bets
 
@@ -109,7 +148,7 @@ Managing Bets
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
-
+<a name="getBetLanding"/>
 ## BetfairGames.getBetLanding
 Managing Bets
 
@@ -119,7 +158,7 @@ Managing Bets
 | password| credentials| Required: Account password.
 | apiAgent| String     | Required: gamexAPIAgent - see README for more info.
 
-
+<a name="getBetSnapshot"/>
 ## BetfairGames.getBetSnapshot
 Viewing your current and past betting activity
 
@@ -133,7 +172,7 @@ Viewing your current and past betting activity
 | channelId     | String     | Requesting a list of current bets of a particular status and a particular game (that is, aparticular channel).
 | selectionsType| String     | `selectionsType` is “MainBets”, “SideBets”, or “CorrectPredictions”. This is only applicable for a channel in which a game is running that has two or more lists of betting selections.
 
-
+<a name="getBetHistory"/>
 ## BetfairGames.getBetHistory
 Viewing your current and past betting activity
 
@@ -148,9 +187,10 @@ Viewing your current and past betting activity
 | recordCount    | Number     | Specify the number of bets that you want the list returned to contain.
 | startRecord    | Number     | Specify the start position (that is, the start position in the Exchange Games API’s overall list) for the list of bets that you want to receive.
 | orderBy        | String     | Valid values: `channelName`, `placedDate`. Order the returned list of bets by the type of game you are interested in.
+| orderBy        | String     | channelName. Order the returned list of bets by the type of game you are interested in.
 | timezone       | String     | Specifying a time zone for the reporting of Your bets. Time zone code. See README for more info. channelName.
 
-## BetfaitGames `timezone` codes: 
+## Betfait Games `timezone` codes: 
 
 | Time zone | Time-zone Code | Description
 |-----------|----------------|------------
