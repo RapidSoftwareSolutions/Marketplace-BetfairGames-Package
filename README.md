@@ -9,7 +9,7 @@ Just [create Betfair Account](https://register.betfair.com/account/registration)
 ## `apiAgent` field
 Each request to Betfair Games API for protected information must include the following field entry in its message header:
 
-#### `gamexAPIAgent: `application_ID_and_version_number`
+#### `gamexAPIAgent:` `application_ID_and_version_number`
 
 where `application_ID_and_version_number` is a URI (a Universal Resource Identifier) that identifies you as the creator of the application either by personal name (if you are a private individual) or by the name of your organization (if you have created the client application on behalf of an organization), and that includes at the end the version number of the software. 
 
