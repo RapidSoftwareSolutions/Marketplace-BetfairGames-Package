@@ -4,7 +4,7 @@ Integrate with the Betfair Exchange Games system - from creating a new client fr
 * Credentials: username, password
 
 ## How to get credentials: 
-Just [create Betfair Account](#https://register.betfair.com/account/registration?promotionCode=FWB000&returnURL=https%3A//www.betfair.com/sport/) and use your `username` and `password`.
+Just [create Betfair Account](#https://register.betfair.com/account/registration) and use your `username` and `password`.
 
 
 ## BetfairGames.getChannels
