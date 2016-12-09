@@ -1,3 +1,0 @@
-/*
-TODO: new format tests
-*/

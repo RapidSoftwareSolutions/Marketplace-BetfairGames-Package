@@ -1,0 +1,403 @@
+{
+  	"name": "BetfairGames", 
+  	"description": "Integrate with the Betfair Exchange Games system - from creating a new client front-end system to an automated betting application",
+  	"version": "1.0", 
+  	"steps": [  
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getChannels", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"channelId\": \"1444074\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"includeGameData\": \"\",\r\n\t\"includeMarket\": \"\",\r\n\t\"includeTiming\": \"\",\r\n\t\"selectionsType\": \"\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getChannelSnapshot", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"channelId\": \"1444074\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"startRecord\": \"0\",\r\n\t\"recordCount\": \"0\",\r\n\t\"marketId\": \"0\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getChannelHistory", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"channelId\": \"1444074\",\r\n\t\"startRecord\": \"0\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getChannelInfo", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getExchangeGamesAccountBalances", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getBetfairAccountBalance", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"account\": \"\",\r\n\t\"recordCount\": \"0\",\r\n\t\"startRecord\": \"0\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getAccountStatement", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"currency\": \"USD\",\r\n\t\"amount\": \"0.99\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/createTransferOrder", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getBetLanding", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"status\": \"\",\r\n\t\"after\": \"0\",\r\n\t\"channelId\": \"1444074\",\r\n\t\"selectionsType\": \"\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getBetSnapshot", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        },     
+        {
+            "body": "{\r\n\t\"username\": \"dima.shirokoff@rapidapi.com\",\r\n\t\"password\": \"RapidPKGtstAPI1!\",\r\n\t\"apiAgent\": \"test.runscope.rapidapi.com\",\r\n\t\"status\": \"\",\r\n\t\"placedDateStart\": \"\",\r\n\t\"placedDateEnd\": \"\",\r\n\t\"recordCount\": \"0\",\r\n\t\"startRecord\": \"0\",\r\n\t\"orderBy\": \"\",\r\n\t\"timezone\": \"\"\r\n}", 
+            "form": {}, 
+            "url": "https://rapidapi.io/connect/BetfairGames/getBetHistory", 
+            "variables": [],
+            "step_type": "request", 
+            "auth": {
+                "username": "qa-project", 
+                "auth_type": "basic", 
+                "password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+            }, 
+            "fragment": "", 
+            "note": "", 
+            "headers": {
+                "Content-Type": [
+                    "application/json"
+                ]
+            }, 
+            "assertions": [
+                {
+                    "comparison": "equal_number", 
+                    "value": 200, 
+                    "source": "response_status"
+                }, 
+                {
+                    "comparison": "equal", 
+                    "property": "outcome", 
+                    "value": "success", 
+                    "source": "response_json"
+                }
+            ], 
+            "scripts": [
+            ],
+            "before_scripts": [], 
+            "method": "POST"
+        }
+  	]
+}

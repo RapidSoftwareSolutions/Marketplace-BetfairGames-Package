@@ -1,0 +1,330 @@
+{
+	"name": "BetfairGames",
+	"description": "Integrate with the Betfair Exchange Games system - from creating a new client front-end system to an automated betting application",
+	"connect": {
+		"username": "qa-project",
+		"password": "481bab2d-e8fe-4214-8714-bab8157356e4"
+	},
+	"dependencies": {
+
+	},
+	"blocks": [
+		{
+			"name": "getChannels",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}
+			]
+		}, 		
+		{
+			"name": "getChannelSnapshot",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "channelId",
+					"value": "1444074"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "includeGameData",
+					"value": ""
+				}, 			
+				{
+					"key": "includeMarket",
+					"value": ""
+				}, 			
+				{
+					"key": "includeTiming",
+					"value": ""
+				}, 			
+				{
+					"key": "selectionsType",
+					"value": ""
+				}
+			]
+		}, 		
+		{
+			"name": "getChannelHistory",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "channelId",
+					"value": "1444074"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "startRecord",
+					"value": 0
+				}, 			
+				{
+					"key": "recordCount",
+					"value": 0
+				}, 			
+				{
+					"key": "marketId",
+					"value": 0
+				}
+			]
+		}, 		
+		{
+			"name": "getChannelInfo",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "channelId",
+					"value": "1444074"
+				}, 			
+				{
+					"key": "startRecord",
+					"value": 0
+				}
+			]
+		}, 		
+		{
+			"name": "getExchangeGamesAccountBalances",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}
+			]
+		}, 		
+		{
+			"name": "getBetfairAccountBalance",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}
+			]
+		}, 		
+		{
+			"name": "getAccountStatement",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "account",
+					"value": ""
+				}, 			
+				{
+					"key": "recordCount",
+					"value": 0
+				}, 			
+				{
+					"key": "startRecord",
+					"value": 0
+				}
+			]
+		}, 		
+		{
+			"name": "createTransferOrder",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "currency",
+					"value": "USD"
+				}, 			
+				{
+					"key": "amount",
+					"value": "0.99"
+				}
+			]
+		}, 		
+		{
+			"name": "getBetLanding",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}
+			]
+		}, 		
+		{
+			"name": "getBetSnapshot",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "status",
+					"value": ""
+				}, 			
+				{
+					"key": "after",
+					"value": 0
+				}, 			
+				{
+					"key": "channelId",
+					"value": "1444074"
+				}, 			
+				{
+					"key": "selectionsType",
+					"value": ""
+				}
+			]
+		}, 		
+		{
+			"name": "getBetHistory",
+			"note": "",
+			"skip": false,
+			"params": [			
+				{
+					"key": "username",
+					"value": "dima.shirokoff@rapidapi.com"
+				}, 			
+				{
+					"key": "password",
+					"value": "RapidPKGtstAPI1!"
+				}, 			
+				{
+					"key": "apiAgent",
+					"value": "test.runscope.rapidapi.com"
+				}, 			
+				{
+					"key": "status",
+					"value": ""
+				}, 			
+				{
+					"key": "placedDateStart",
+					"value": ""
+				}, 			
+				{
+					"key": "placedDateEnd",
+					"value": ""
+				}, 			
+				{
+					"key": "recordCount",
+					"value": 0
+				}, 			
+				{
+					"key": "startRecord",
+					"value": 0
+				}, 			
+				{
+					"key": "orderBy",
+					"value": ""
+				}, 			
+				{
+					"key": "timezone",
+					"value": ""
+				}
+			]
+		}
+	]
+}

@@ -46,6 +46,7 @@ for(let route in API) {
             r.contextWrites['to'] = response[Object.keys(response)[0]]
             r.callback            = 'success';
         } catch(e) {
+            console.log(e);
             r.callback            = 'error';
             r.contextWrites['to'] = e.status_code ? e : { status_code: "API_ERROR", status_msg:  e.message ? e.message : e };
         }
